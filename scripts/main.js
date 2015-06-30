@@ -5,7 +5,6 @@ $(document).ready(function () {
     'home': function () {
       $('#mainVideo').animate({opacity:1}, 700);
       $('#mainVideo').get(0).play();
-      $('.anim-s1-bg').get(0).play();
     },
 
     'journey': function () {
