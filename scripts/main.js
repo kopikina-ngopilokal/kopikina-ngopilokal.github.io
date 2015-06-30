@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  var textSlider;
+
   // Function to run after section changed
   // All animation goes here
   var afterLoadHandler = {
@@ -8,7 +10,7 @@ $(document).ready(function () {
     },
 
     'journey': function () {
-      $('#mainVideo').animate({opacity:1}, 700);
+      $('#mainVideo').animate({opacity:0.314}, 700);
       $('#mainVideo').get(0).play();
 
       var cup = $('#cup').find('img');
@@ -45,7 +47,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('.anim-s3-1').removeClass('fadeInRight');
         $('.anim-s3-2').removeClass('fadeInDown');
-        setInterval(function() { 
+        textSlider = setInterval(function() { 
           $('#slideshow > div:first')
             // .delay(1500)
             .fadeOut(1000)
@@ -55,7 +57,7 @@ $(document).ready(function () {
             .end()
             .appendTo('#slideshow');
         },  6000);
-      }, 8000);
+      }, 5000);
     },
 
     'islands': function () {
@@ -113,6 +115,8 @@ $(document).ready(function () {
         $('video').animate({opacity: 0});
       }
       $('#line').css({height:1});
+
+      clearInterval(textSlider);
     }
   });
 
@@ -206,12 +210,13 @@ $(document).ready(function () {
     new Image().src = url;
   }
 
-  preloadImg('images/map/sumatra.png');
-  preloadImg('images/map/jawa.png');
-  preloadImg('images/map/kalimantan.png');
-  preloadImg('images/map/sulawesi.png');
-  preloadImg('images/map/papua.png');
-  preloadImg('images/map/balinusatenggara.png');
+  preloadImg('images/map/3/sumatra.png');
+  preloadImg('images/map/3/jawa.png');
+  preloadImg('images/map/3/kalimantan.png');
+  preloadImg('images/map/3/sulawesi.png');
+  preloadImg('images/map/3/papua.png');
+  preloadImg('images/map/3/bali.png');
+
   for(var i = 1; i <= 13; i++){
     preloadImg('images/cangkir/cangkir'+i+'.png');
   }
