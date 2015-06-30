@@ -41,6 +41,23 @@ $(document).ready(function () {
       $('.anim-s3-6').delay(5400).fadeIn(100).addClass('fadeInLeft');
       $('.anim-s3-7').delay(6400).css({display: 'inline-block', width:0}).animate({width:100}, 700);
       $('.anim-s3-8').delay(7600).fadeIn(100).addClass('fadeInDown');
+
+      $("#slideshow > div:gt(0)").hide();
+
+      setTimeout(function () {
+        $('.anim-s3-1').removeClass('fadeInRight');
+        $('.anim-s3-2').removeClass('fadeInDown');
+        setInterval(function() { 
+          $('#slideshow > div:first')
+            // .delay(1500)
+            .fadeOut(1000)
+            .next()
+            .delay(1000)
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        },  6000);
+      }, 8000);
     },
 
     'islands': function () {
@@ -188,5 +205,7 @@ $(document).ready(function () {
   for(var i = 1; i <= 13; i++){
     preloadImg('images/cangkir/cangkir'+i+'.png');
   }
+
+  
 
 });

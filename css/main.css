@@ -8636,14 +8636,18 @@ button.close {
   font-family: 'Bodoni MT Poster';
   src: url("../fonts/BOD_PSTC.TTF");
 }
-/* line 4, ../scss/_sections.scss */
+/* line 3, ../scss/_sections.scss */
+#section2 {
+  background: transparent;
+}
+/* line 6, ../scss/_sections.scss */
 #section2 #cup {
   position: absolute;
   top: 50px;
   left: -50px;
   width: 50px;
 }
-/* line 11, ../scss/_sections.scss */
+/* line 13, ../scss/_sections.scss */
 #section2 h2 {
   margin-top: 50%;
   text-indent: -99999px;
@@ -8652,49 +8656,53 @@ button.close {
   height: 400px;
   opacity: 0.8;
 }
-/* line 20, ../scss/_sections.scss */
+/* line 22, ../scss/_sections.scss */
 #section2 p {
   padding-top: 50%;
   line-height: 26px;
   font-size: 16px;
 }
-
 /* line 28, ../scss/_sections.scss */
+#section2 .quote {
+  padding-top: 15px;
+}
+
+/* line 34, ../scss/_sections.scss */
 #section3 h2 {
   position: relative;
   left: 60px;
   text-indent: -60px;
   font-size: 48px;
 }
-/* line 34, ../scss/_sections.scss */
+/* line 40, ../scss/_sections.scss */
 #section3 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 38, ../scss/_sections.scss */
+/* line 44, ../scss/_sections.scss */
 #section3 h2 .line {
   border-bottom: 1px solid #fff;
   margin-left: 4px;
 }
-/* line 44, ../scss/_sections.scss */
+/* line 50, ../scss/_sections.scss */
 #section3 h3 {
   margin-top: 60px;
 }
-/* line 48, ../scss/_sections.scss */
+/* line 54, ../scss/_sections.scss */
 #section3 .tree-container {
   height: 200px;
   position: relative;
   margin-left: 200px;
   margin-right: 40px;
 }
-/* line 54, ../scss/_sections.scss */
+/* line 60, ../scss/_sections.scss */
 #section3 .tree-container .tree {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
 }
-/* line 61, ../scss/_sections.scss */
+/* line 67, ../scss/_sections.scss */
 #section3 .tree-container .tree-text {
   position: absolute;
   right: 0;
@@ -8702,7 +8710,7 @@ button.close {
   width: 120px;
   height: 100%;
 }
-/* line 69, ../scss/_sections.scss */
+/* line 75, ../scss/_sections.scss */
 #section3 .tree-container #line {
   position: absolute;
   top: 0;
@@ -8710,14 +8718,14 @@ button.close {
   height: 0;
   border-left: 2px dotted white;
 }
-/* line 77, ../scss/_sections.scss */
+/* line 83, ../scss/_sections.scss */
 #section3 .tree-container #onethousandone {
   position: absolute;
   top: -32px;
   left: 0;
   font-size: 24px;
 }
-/* line 84, ../scss/_sections.scss */
+/* line 90, ../scss/_sections.scss */
 #section3 .tree-container #konturkultur {
   position: absolute;
   bottom: 0;
@@ -8725,53 +8733,53 @@ button.close {
   width: 100px;
 }
 
-/* line 94, ../scss/_sections.scss */
+/* line 100, ../scss/_sections.scss */
 #section4 .indomap {
   position: relative;
   margin: -100px 0 30px 0;
 }
-/* line 98, ../scss/_sections.scss */
+/* line 104, ../scss/_sections.scss */
 #section4 .indomap .block {
   position: absolute;
   cursor: pointer;
   opacity: 0;
 }
-/* line 103, ../scss/_sections.scss */
+/* line 109, ../scss/_sections.scss */
 #section4 .indomap .block#sumatra {
   left: 0;
   top: 5%;
   width: 27%;
   height: 70%;
 }
-/* line 110, ../scss/_sections.scss */
+/* line 116, ../scss/_sections.scss */
 #section4 .indomap .block#sulawesi {
   left: 51%;
   top: 30%;
   width: 14%;
   height: 43%;
 }
-/* line 117, ../scss/_sections.scss */
+/* line 123, ../scss/_sections.scss */
 #section4 .indomap .block#jawa {
   left: 23%;
   top: 72%;
   width: 20%;
   height: 17%;
 }
-/* line 124, ../scss/_sections.scss */
+/* line 130, ../scss/_sections.scss */
 #section4 .indomap .block#bali {
   left: 43%;
   top: 82%;
   width: 27%;
   height: 17%;
 }
-/* line 131, ../scss/_sections.scss */
+/* line 137, ../scss/_sections.scss */
 #section4 .indomap .block#papua {
   left: 76%;
   top: 40%;
   width: 23%;
   height: 52%;
 }
-/* line 138, ../scss/_sections.scss */
+/* line 144, ../scss/_sections.scss */
 #section4 .indomap .block#kalimantan {
   left: 30%;
   top: 15%;
@@ -8779,7 +8787,7 @@ button.close {
   height: 50%;
 }
 
-/* line 153, ../scss/_sections.scss */
+/* line 159, ../scss/_sections.scss */
 #section5 h2 {
   position: relative;
   display: inline-block;
@@ -8795,18 +8803,22 @@ button.close {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 166, ../scss/_sections.scss */
+/* line 172, ../scss/_sections.scss */
 #section5 h2 small {
   font-size: 32px;
   color: #fff;
 }
-/* line 171, ../scss/_sections.scss */
+/* line 177, ../scss/_sections.scss */
 #section5 h2 .line {
   border-bottom: 1px solid #fff;
   margin: 0 -10px;
 }
+/* line 183, ../scss/_sections.scss */
+#section5 p {
+  font-size: 1.1em;
+}
 
-/* line 179, ../scss/_sections.scss */
+/* line 189, ../scss/_sections.scss */
 #section6 .shape1 {
   position: absolute;
   z-index: 3;
@@ -8822,7 +8834,7 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 193, ../scss/_sections.scss */
+/* line 203, ../scss/_sections.scss */
 #section6 .shape2 {
   position: absolute;
   z-index: 2;
@@ -8838,12 +8850,12 @@ button.close {
   -webkit-transform: rotate(-23.5deg);
   transform: rotate(-23.5deg);
 }
-/* line 206, ../scss/_sections.scss */
+/* line 216, ../scss/_sections.scss */
 #section6 .shape2 .shape-content {
   height: 100%;
   top: -40%;
 }
-/* line 212, ../scss/_sections.scss */
+/* line 222, ../scss/_sections.scss */
 #section6 .shape-content {
   position: relative;
   height: 80%;
@@ -8853,11 +8865,11 @@ button.close {
   -webkit-transform: rotate(23.5deg);
   transform: rotate(23.5deg);
 }
-/* line 219, ../scss/_sections.scss */
+/* line 229, ../scss/_sections.scss */
 #section6 .shape-content video {
   height: 100%;
 }
-/* line 225, ../scss/_sections.scss */
+/* line 235, ../scss/_sections.scss */
 #section6 .overlay:after {
   content: '';
   position: absolute;
@@ -8867,47 +8879,47 @@ button.close {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 236, ../scss/_sections.scss */
+/* line 246, ../scss/_sections.scss */
 #section6 .s6-text {
   position: absolute;
   z-index: 5;
   display: none;
 }
-/* line 241, ../scss/_sections.scss */
+/* line 251, ../scss/_sections.scss */
 #section6 .s6-text-1 {
   width: 300px;
   top: 30%;
   left: 50%;
 }
-/* line 247, ../scss/_sections.scss */
+/* line 257, ../scss/_sections.scss */
 #section6 .s6-text-2 {
   width: 150px;
   top: 30%;
   left: 10%;
 }
-/* line 253, ../scss/_sections.scss */
+/* line 263, ../scss/_sections.scss */
 #section6 .s6-text-3 {
   width: 250px;
   bottom: 10%;
   right: 10%;
 }
 
-/* line 261, ../scss/_sections.scss */
+/* line 271, ../scss/_sections.scss */
 #section7 .hand-icon {
   width: 80px;
   margin: 15px 0;
 }
-/* line 266, ../scss/_sections.scss */
+/* line 276, ../scss/_sections.scss */
 #section7 .coffeedrip {
   width: 60px;
   margin: 20px 0;
 }
 
-/* line 273, ../scss/_sections.scss */
+/* line 283, ../scss/_sections.scss */
 #section8 .input-container {
   position: relative;
 }
-/* line 276, ../scss/_sections.scss */
+/* line 286, ../scss/_sections.scss */
 #section8 .input-container input {
   color: #fff;
   background-color: transparent;
@@ -8917,7 +8929,7 @@ button.close {
   height: 68px;
   z-index: 3;
 }
-/* line 286, ../scss/_sections.scss */
+/* line 296, ../scss/_sections.scss */
 #section8 .input-container button {
   background: none;
   border: none;
@@ -8925,7 +8937,7 @@ button.close {
   right: 10px;
   top: 10px;
 }
-/* line 297, ../scss/_sections.scss */
+/* line 307, ../scss/_sections.scss */
 #section8 .input-container #inputPlaceholder {
   position: absolute;
   top: 22px;
@@ -8935,7 +8947,7 @@ button.close {
   z-index: -1;
   cursor: normal;
 }
-/* line 308, ../scss/_sections.scss */
+/* line 318, ../scss/_sections.scss */
 #section8 .socialbtn {
   opacity: 0.4;
   -moz-transition: all 0.5s;
@@ -8943,23 +8955,37 @@ button.close {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 312, ../scss/_sections.scss */
+/* line 322, ../scss/_sections.scss */
 #section8 .socialbtn:hover {
   opacity: 1;
 }
 
-/* line 321, ../scss/_sections.scss */
+/* line 331, ../scss/_sections.scss */
 #footer .position {
   margin-bottom: -12px;
   margin-top: -14px;
 }
-/* line 325, ../scss/_sections.scss */
+/* line 335, ../scss/_sections.scss */
 #footer .title-footer {
   font-size: 14px;
 }
-/* line 328, ../scss/_sections.scss */
+/* line 338, ../scss/_sections.scss */
 #footer .p-footer {
   font-size: 10px;
+}
+
+/* line 344, ../scss/_sections.scss */
+#slideshow {
+  position: relative;
+}
+
+/* line 348, ../scss/_sections.scss */
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* line 9, ../scss/main.scss */
@@ -8995,27 +9021,11 @@ body {
 }
 
 /* line 39, ../scss/main.scss */
-#video-home {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 46, ../scss/main.scss */
-#video-home img {
-  width: 100%;
-}
-/* line 50, ../scss/main.scss */
-#video-home video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  opacity: 0;
+#mainVideo {
+  position: absolute;
 }
 
-/* line 59, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 #navigation {
   display: none;
   position: fixed;
@@ -9025,7 +9035,7 @@ body {
   padding: 10px 40px 0 10px;
   border: 1px solid #fff;
 }
-/* line 68, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 #navigation li > a {
   font-style: italic;
   color: #fff;
@@ -9033,7 +9043,7 @@ body {
   font-weight: bold;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 #mapIcon {
   display: none;
   position: fixed;
@@ -9042,17 +9052,17 @@ body {
   right: 15px;
   font-size: 48px;
 }
-/* line 84, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 #mapIcon a {
   color: #fff;
 }
 
-/* line 90, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 #content .section {
   position: relative;
   overflow: hidden;
 }
-/* line 95, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 #content .section-bg {
   position: absolute;
   top: 0;
@@ -9060,11 +9070,11 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 102, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #content .section-bg img {
   width: 100%;
 }
-/* line 106, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 #content .section-bg video {
   min-width: 100%;
   min-height: 100%;
@@ -9072,7 +9082,7 @@ body {
   height: auto;
   opacity: 0;
 }
-/* line 115, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 #content .section-content {
   position: absolute;
   top: 50%;
@@ -9085,7 +9095,7 @@ body {
   transform: translateY(-25%);
 }
 
-/* line 126, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 #footer {
   position: absolute;
   bottom: 0;
@@ -9095,17 +9105,17 @@ body {
   padding: 15px 0;
 }
 
-/* line 135, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .animated {
   display: none;
 }
 
-/* line 139, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .img-full-width {
   width: 100%;
 }
 
-/* line 143, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 .img-full-height {
   height: 100%;
 }
