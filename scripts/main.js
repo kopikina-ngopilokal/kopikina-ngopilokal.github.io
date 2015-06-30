@@ -4,14 +4,14 @@ $(document).ready(function () {
   var afterLoadHandler = {
     'home': function () {
       $('#mainVideo').animate({opacity:1}, 700);
-      $('#mainVideo').get(0).play();
+      // $('#mainVideo').get(0).play();
       // $('.anim-s1-bg').get(0).play();
       // $('.section-bg').css({position: 'fixed'});
     },
 
     'journey': function () {
       $('#mainVideo').animate({opacity:1}, 700);
-      $('#mainVideo').get(0).play();
+      // $('#mainVideo').get(0).play();
 
       var cup = $('#cup').find('img');
 
@@ -83,9 +83,8 @@ $(document).ready(function () {
     },
 
     'artisan': function () {
-      $('.anim-s7-bg').fadeIn();
-
-      $('.anim-s7-1').delay(600).fadeIn();
+      $('.anim-s7-1').fadeIn();
+      $('.anim-s7-2').delay(600).fadeIn();
     },
 
     'subscribe': function () {
@@ -151,6 +150,19 @@ $(document).ready(function () {
     video.pause();
     _this.removeClass('overlay');
     target.fadeOut();
+  });
+
+  // Section 7: show text when hover area
+  $('.js-s7-hover').on('mouseover', function () {
+    var _this = $(this);
+
+    _this.find('div').fadeIn();
+  });
+
+  $('.js-s7-hover').on('mouseleave', function () {
+    var _this = $(this);
+
+    _this.find('div').fadeOut();
   });
 
   function animateCup (obj) {

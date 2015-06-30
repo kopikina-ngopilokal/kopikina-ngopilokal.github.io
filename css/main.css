@@ -8905,21 +8905,48 @@ button.close {
 }
 
 /* line 271, ../scss/_sections.scss */
+#section7 .s7-content {
+  padding: 0;
+  position: absolute;
+  height: 100%;
+}
+/* line 276, ../scss/_sections.scss */
+#section7 .s7-content.s7-content-coffee {
+  background-image: url("../images/bg7-coffee.jpg");
+  background-size: cover;
+  left: 0;
+}
+/* line 282, ../scss/_sections.scss */
+#section7 .s7-content.s7-content-artisan {
+  background-image: url("../images/bg7-artisan.jpg");
+  background-size: cover;
+  right: 0;
+}
+/* line 288, ../scss/_sections.scss */
+#section7 .s7-content > div {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 25%;
+}
+/* line 298, ../scss/_sections.scss */
 #section7 .hand-icon {
   width: 80px;
   margin: 15px 0;
 }
-/* line 276, ../scss/_sections.scss */
+/* line 303, ../scss/_sections.scss */
 #section7 .coffeedrip {
   width: 60px;
   margin: 20px 0;
 }
 
-/* line 283, ../scss/_sections.scss */
+/* line 310, ../scss/_sections.scss */
 #section8 .input-container {
   position: relative;
 }
-/* line 286, ../scss/_sections.scss */
+/* line 313, ../scss/_sections.scss */
 #section8 .input-container input {
   color: #fff;
   background-color: transparent;
@@ -8929,7 +8956,7 @@ button.close {
   height: 68px;
   z-index: 3;
 }
-/* line 296, ../scss/_sections.scss */
+/* line 323, ../scss/_sections.scss */
 #section8 .input-container button {
   background: none;
   border: none;
@@ -8937,7 +8964,7 @@ button.close {
   right: 10px;
   top: 10px;
 }
-/* line 307, ../scss/_sections.scss */
+/* line 334, ../scss/_sections.scss */
 #section8 .input-container #inputPlaceholder {
   position: absolute;
   top: 22px;
@@ -8947,7 +8974,7 @@ button.close {
   z-index: -1;
   cursor: normal;
 }
-/* line 318, ../scss/_sections.scss */
+/* line 345, ../scss/_sections.scss */
 #section8 .socialbtn {
   opacity: 0.4;
   -moz-transition: all 0.5s;
@@ -8955,31 +8982,31 @@ button.close {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 322, ../scss/_sections.scss */
+/* line 349, ../scss/_sections.scss */
 #section8 .socialbtn:hover {
   opacity: 1;
 }
 
-/* line 331, ../scss/_sections.scss */
+/* line 358, ../scss/_sections.scss */
 #footer .position {
   margin-bottom: -12px;
   margin-top: -14px;
 }
-/* line 335, ../scss/_sections.scss */
+/* line 362, ../scss/_sections.scss */
 #footer .title-footer {
   font-size: 14px;
 }
-/* line 338, ../scss/_sections.scss */
+/* line 365, ../scss/_sections.scss */
 #footer .p-footer {
   font-size: 10px;
 }
 
-/* line 344, ../scss/_sections.scss */
+/* line 371, ../scss/_sections.scss */
 #slideshow {
   position: relative;
 }
 
-/* line 348, ../scss/_sections.scss */
+/* line 375, ../scss/_sections.scss */
 #slideshow > div {
   position: absolute;
   top: 10px;
