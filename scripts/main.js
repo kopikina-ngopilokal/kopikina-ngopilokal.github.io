@@ -3,12 +3,16 @@ $(document).ready(function () {
   // All animation goes here
   var afterLoadHandler = {
     'home': function () {
-      $('.anim-s1-bg').animate({opacity:1}, 700);
-      $('.anim-s1-bg').get(0).play();
+      $('#mainVideo').animate({opacity:1}, 700);
+      $('#mainVideo').get(0).play();
+      // $('.anim-s1-bg').get(0).play();
       // $('.section-bg').css({position: 'fixed'});
     },
 
     'journey': function () {
+      $('#mainVideo').animate({opacity:1}, 700);
+      $('#mainVideo').get(0).play();
+
       var cup = $('#cup').find('img');
 
       resetCup(cup);
@@ -88,10 +92,13 @@ $(document).ready(function () {
 
     onLeave: function (index, nextIndex, direction) {
       $('.animated').fadeOut();
-      $('video').animate({opacity: 0});
       if (nextIndex === 1 || nextIndex === 8) {
         $('#navigation, #mapIcon').fadeOut();
       }
+      if (nextIndex > 2) {
+        $('video').animate({opacity: 0});
+      }
+      $('#line').css({height:1});
     }
   });
 
