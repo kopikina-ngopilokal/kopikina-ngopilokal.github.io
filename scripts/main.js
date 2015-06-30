@@ -4,14 +4,13 @@ $(document).ready(function () {
   var afterLoadHandler = {
     'home': function () {
       $('#mainVideo').animate({opacity:1}, 700);
-      // $('#mainVideo').get(0).play();
-      // $('.anim-s1-bg').get(0).play();
-      // $('.section-bg').css({position: 'fixed'});
+      $('#mainVideo').get(0).play();
+      $('.anim-s1-bg').get(0).play();
     },
 
     'journey': function () {
       $('#mainVideo').animate({opacity:1}, 700);
-      // $('#mainVideo').get(0).play();
+      $('#mainVideo').get(0).play();
 
       var cup = $('#cup').find('img');
 
