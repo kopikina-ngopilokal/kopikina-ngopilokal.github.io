@@ -1,0 +1,146 @@
+$icon-font-path: "../vendors/bootstrap/assets/fonts/bootstrap/";
+@import '../vendors/bootstrap/assets/stylesheets/bootstrap';
+
+@import 'compass/css3';
+@import 'fonts';
+@import 'sections';
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Bodoni MT', serif;
+  position: relative;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,0);
+  border: none;
+
+  .navbar-brand
+  {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+
+    > img{
+      display: inline-block;
+    }
+  }
+}
+
+#video-home{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img{
+    width: 100%;
+  }
+
+  video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    opacity: 0;
+  }
+}
+
+#navigation{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 40px 0 10px;
+  border: 1px solid #fff;
+
+  li > a{
+    font-style: italic;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+#mapIcon{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 15px;
+  right: 15px;
+  font-size: 48px;
+
+  a{
+    color: #fff;
+  }
+}
+
+#content{
+  .section{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img{
+      width: 100%;
+    }
+
+    video{
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      opacity: 0;
+    }
+  }
+
+  .section-content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include transform(translateY(-25%));
+  }
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  padding: 15px 0;
+}
+
+.animated {
+  display: none;
+}
+
+.img-full-width{
+  width: 100%
+}
+
+.img-full-height{
+  height: 100%
+}
+

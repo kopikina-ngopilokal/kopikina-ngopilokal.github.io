@@ -1,0 +1,331 @@
+#section1{}
+
+#section2{
+  #cup{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 50px;
+  }
+
+  h2{
+    margin-top: 50%;
+    text-indent: -99999px;
+    background: url('../images/journey-title.png') top left no-repeat;
+    background-size: contain;
+    height: 400px;
+    opacity: 0.8;
+  }
+
+  p{
+    padding-top: 50%;
+    line-height: 26px;
+    font-size: 16px;
+  }
+}
+
+#section3{
+  h2{
+    position: relative;
+    left: 60px;
+    text-indent: -60px;
+    font-size: 48px;
+
+    small{
+      font-size: 32px;
+      color: #fff;
+    }
+    .line{
+      border-bottom: 1px solid #fff;
+      margin-left: 4px;
+    }
+  }
+
+  h3{
+    margin-top: 60px;
+  }
+
+  .tree-container{
+    height: 200px;
+    position: relative;
+    margin-left: 200px;
+    margin-right: 40px;
+
+    .tree{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+    }
+
+    .tree-text{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 120px;
+      height: 100%;
+    }
+
+    #line{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      border-left: 2px dotted white;
+    }
+
+    #onethousandone{
+      position: absolute;
+      top: -32px;
+      left: 0;
+      font-size: 24px;
+    }
+
+    #konturkultur{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+    }
+  }
+}
+
+#section4{
+  .indomap{
+    position: relative;
+    margin: -100px 0 30px 0;
+
+    .block{
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+
+      &#sumatra{
+        left: 0;
+        top: 5%;
+        width: 27%;
+        height: 70%;
+      }
+
+      &#sulawesi{
+        left: 51%;
+        top: 30%;
+        width: 14%;
+        height: 43%;
+      }
+
+      &#jawa{
+        left: 23%;
+        top: 72%;
+        width: 20%;
+        height: 17%;
+      }
+
+      &#bali{
+        left: 43%;
+        top: 82%;
+        width: 27%;
+        height: 17%;
+      }
+
+      &#papua{
+        left: 76%;
+        top: 40%;
+        width: 23%;
+        height: 52%;
+      }
+
+      &#kalimantan{
+        left: 30%;
+        top: 15%;
+        width: 22%;
+        height: 50%;
+      }
+    }
+  }
+
+  .map-caption{
+    // display: none;
+  }
+}
+
+#section5{
+  h2{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    left: 50%;
+    text-align: left;
+    text-indent: -80px;
+    font-size: 90px;
+    line-height: 76px;
+    margin: 80px 0 30px 0;
+
+    @include transform(translateX(-50%));
+
+    small{
+      font-size: 32px;
+      color: #fff;
+    }
+
+    .line{
+      border-bottom: 1px solid #fff;
+      margin: 0 -10px;
+    }
+  }
+}
+
+#section6{
+  .shape1{
+    position: absolute;
+    z-index: 3;
+    top: -15%;
+    left: -10%;
+    width: 50%;
+    height: 150%;
+    border: 4px solid white;
+    background-color: #000;
+    overflow: hidden;
+
+    @include transform(rotate(-23.5deg));
+  }
+
+  .shape2{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: 100%;
+    border: 4px solid white;
+    background-color: #000;
+    overflow: hidden;
+
+    @include transform(rotate(-23.5deg));
+
+    .shape-content{
+      height: 100%;
+      top: -40%;
+    }
+  }
+
+  .shape-content{
+    position: relative;
+    height: 80%;
+    top: 5%;
+    
+    @include transform(rotate(23.5deg));
+
+    video{
+      height: 100%;
+    }
+  }
+
+  .overlay{
+    &:after{
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+
+  .s6-text{
+    position: absolute;
+    z-index: 5;
+    display: none;
+  }
+  .s6-text-1{
+    width: 300px;
+    top: 30%;
+    left: 50%;
+  }
+
+  .s6-text-2{
+    width: 150px;
+    top: 30%;
+    left: 10%;
+  }
+
+  .s6-text-3{
+    width: 250px;
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+#section7{
+  .hand-icon{
+    width: 80px;
+    margin: 15px 0;
+  }
+
+  .coffeedrip{
+    width: 60px;
+    margin: 20px 0;
+  }
+}
+
+#section8{
+  .input-container{
+    position: relative;
+
+    input{
+      color: #fff;
+      background-color: rgba(0,0,0,0);
+      border-radius: 0;
+      border: 2px solid #fff;
+      margin: 40px 0;
+      height: 68px;
+      z-index: 3;
+    }
+
+    button{
+      background: none;
+      border: none;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      &:hover{
+      }
+    }
+
+    #inputPlaceholder{
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 100%;
+      font-size: 18px;
+      z-index: -1;
+      cursor: normal;
+    }
+  }
+
+  .socialbtn{
+    opacity: 0.4;
+    @include transition(all .5s);
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+}
+
+#footer{
+  // margin-bottom: 0;
+  .position{
+    margin-bottom: -12px;
+    margin-top: -14px;
+  }
+  .title-footer{
+    font-size: 14px;
+  }
+  .p-footer{
+    font-size: 10px;
+  }
+}
