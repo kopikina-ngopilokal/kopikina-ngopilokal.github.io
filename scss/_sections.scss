@@ -268,6 +268,33 @@
 }
 
 #section7{
+  .s7-content{
+    padding: 0;
+    position: absolute;
+    height: 100%;
+
+    &.s7-content-coffee{
+      background-image: url("../images/bg7-coffee.jpg");
+      background-size: cover;
+      left: 0;
+    }
+
+    &.s7-content-artisan{
+      background-image: url("../images/bg7-artisan.jpg");
+      background-size: cover;
+      right: 0;
+    }
+
+    >div{
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0,0.6);
+      padding-top: 25%;
+    }
+  }
+
   .hand-icon{
     width: 80px;
     margin: 15px 0;
